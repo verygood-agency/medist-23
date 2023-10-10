@@ -1,0 +1,71 @@
+.container--mod {
+  padding: 64px 32px;
+  border: 2px solid #333333;
+  margin-top: 32px;
+  position: relative;
+
+  .sticker {
+    position: absolute;
+    top: 0;
+    right: 32px;
+    display: block;
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+.cust-text {
+  margin-top: 0;
+  color: rgba(30, 30, 30, 0.7);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 700px;
+}
+
+.faq-filter {
+  padding: 36px 0 43px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #1e1e1e;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &__link {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: #1e1e1e;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 40px;
+    border: 1px solid #3d3d3d;
+    transition: all 0.3s;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .is-active {
+    background: #ECEAE2;
+    border-color: #ECEAE2;
+    pointer-events: none;
+  }
+}
