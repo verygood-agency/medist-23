@@ -96,6 +96,7 @@
         </p>
       </div>
     </div>
+    <!-- десктопный фильтр с выбором услуг  -->
     <div class="faq-filter">
       <div class="container">
         <h2 class="faq-filter__title">Выберите интересующую вас услугу:</h2>
@@ -124,23 +125,49 @@
         </ul>
       </div>
     </div>
-    <div class="section-faq">
+    <!-- мобильный фильтр с выбором услуг  -->
+    <div class="faq-filter-mob">
+      <div class="container">
+        <form action="">
+          <label class="faq-filter-mob__label" for="surgery-type">Выберите интересующую вас услугу:</label>
+          <select class="visually-hidden new-select" id="surgery-type" name="surgery_type">
+            <option value="abdominoplasty">Абдоминопластика</option>
+            <option value="mammoplasty">Маммопластика</option>
+            <option value="earlobe_correction">Коррекция мочки уха</option>
+            <option value="rhinoplasty">Ринопластика</option>
+            <option value="smas_lifting">SMAS лифтинг</option>
+            <option value="lipomodeling">Липомоделирование</option>
+            <option value="waist_reduction">Уменьшение талии</option>
+          </select>
+        </form>
+
+
+
+      </div>
+    </div>
+    <div class="section-faq section-faq--mod">
       <div class="container">
         <div class="accordion accordion-primary" id="accordionFaq">
           <div class="accordion-item scrollFade">
             <h2 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                При оценке дизайна и композиции читаемый текст мешает сосредоточиться?
+                Преимущества абдоминопластики
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aspernatur autem consequatur
-                doloremque doloribus earum excepturi exercitationem facere impedit incidunt maiores maxime
-                minima minus mollitia neque nesciunt nisi pariatur, quae quasi ratione reiciendis reprehenderit
-                sequi similique soluta vel voluptate! Accusamus ad aliquam culpa laudantium nemo optio
-                perferendis quasi, totam?
+                <p>Абдоминопластика – уникальная пластическая операция, направленная на решение множества проблем в
+                  области живота, и она имеет ряд преимуществ:</p>
+                <ol>
+                  <li>С помощью абдоминопластики можно восстановить правильную анатомию живота и его привлекательные
+                    пропорции</li>
+                  <li>Эффективна даже в самых «запущенных» случаях, когда липосакция бессильна</li>
+                  <li>Долговременный результат</li>
+                </ol>
+                <p>Благодаря устранению нежелательных недостатков в Вашей внешности с помощью абдоминопластики,
+                  проведенной нашими хирургами, Вы вернете веру в себя и в свои силы, улучшите самооценку
+                  и качество жизни!</p>
               </div>
             </div>
           </div>
@@ -148,13 +175,22 @@
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                При оценке дизайна и композиции читаемый текст мешает сосредоточиться?
+                Реабилитация после абдоминопластики
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
               <div class="accordion-body">
-                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
-                Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+                <p>Абдоминопластика – уникальная пластическая операция, направленная на решение множества проблем в
+                  области живота, и она имеет ряд преимуществ:</p>
+                <ol>
+                  <li>С помощью абдоминопластики можно восстановить правильную анатомию живота и его привлекательные
+                    пропорции</li>
+                  <li>Эффективна даже в самых «запущенных» случаях, когда липосакция бессильна</li>
+                  <li>Долговременный результат</li>
+                </ol>
+                <p>Благодаря устранению нежелательных недостатков в Вашей внешности с помощью абдоминопластики,
+                  проведенной нашими хирургами, Вы вернете веру в себя и в свои силы, улучшите самооценку
+                  и качество жизни!</p>
               </div>
             </div>
           </div>
@@ -431,6 +467,8 @@
   <script src="js/magnific-popup.js?v=55d95e2b5ae7c7dccca82dfc2383233b"></script>
   <script src="js/zabuto-calendar.js?v=55d95e2b5ae7c7dccca82dfc2383233b"></script>
   <script src="js/main.js?v=55d95e2b5ae7c7dccca82dfc2383233b"></script>
+  <!-- новые скрипты  -->
+  <script src="./js/custom.js"></script>
 </body>
 
 </html>
