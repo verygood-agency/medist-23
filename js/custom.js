@@ -50,4 +50,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   };
 
+  // слайдер с документами
+  if (document.querySelector('.licensesSwiper')) {
+
+    var swiperLicenses = new Swiper('.licensesSwiper', {
+      slidesPerView: 5, // Показывать 5 слайдов на экране
+      spaceBetween: 24, // Отступ между слайдами 24px
+      // navigation: {
+      //   nextEl: '.licensesSwiper .swiper-button-next',
+      //   prevEl: '.licensesSwiper .swiper-button-prev',
+      // },
+      breakpoints: {
+        // when window width is >= 320px
+        240: {
+          slidesPerView: 1,
+          spaceBetween: 48
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 48
+        },
+        // when window width is >= 640px
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 24
+        }
+      }
+      // breakpoints: {
+      //   // На экранах размером 550px и меньше показывать 1 слайд
+      //   240: {
+      //     slidesPerView: 1,
+      //   },
+      //   1980: {
+      //     slidesPerView: 5,
+      //   }
+      // }
+    });
+  };
+
+
 });

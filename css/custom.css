@@ -186,9 +186,171 @@
   font-size: 18px;
 }
 
+.cust-licenses {
+  padding-bottom: 78px;
+  padding-left: 104px;
+}
+.cust-licenses__card:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+.cust-licenses__content {
+  padding: 31px;
+  border-radius: 32px;
+  border: 1px solid rgba(30, 30, 30, 0.7);
+  background: rgba(255, 255, 255, 0);
+}
+.cust-licenses .title {
+  margin: 0;
+  color: #1e1e1e;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.cust-licenses .swiper {
+  width: 100%;
+  height: 100%;
+}
+.cust-licenses .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cust-reviews {
+  padding: 78px 0;
+}
+.cust-reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cust-reviews__item {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  border-radius: 32px;
+  padding: 47px 37px 29px;
+  border: 1px solid rgba(61, 61, 61, 0.44);
+}
+.cust-reviews__item:before {
+  content: "";
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='51' height='38' viewBox='0 0 51 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M51 5.93492C44.3312 9.2321 40.9968 13.1063 40.9968 17.5575C43.8392 17.8872 46.1897 19.0687 48.0482 21.102C49.9068 23.0803 50.836 25.3883 50.836 28.026C50.836 30.8286 49.9341 33.1916 48.1302 35.115C46.3264 37.0383 44.0579 38 41.3248 38C38.2637 38 35.6125 36.7636 33.3714 34.2907C31.1302 31.7628 30.0096 28.7129 30.0096 25.141C30.0096 14.4252 35.9678 6.04483 47.8842 0L51 5.93492ZM20.9904 5.93492C14.2669 9.2321 10.9051 13.1063 10.9051 17.5575C13.8023 17.8872 16.1801 19.0687 18.0386 21.102C19.8971 23.0803 20.8264 25.3883 20.8264 28.026C20.8264 30.8286 19.8971 33.1916 18.0386 35.115C16.2347 37.0383 13.9662 38 11.2331 38C8.17203 38 5.5209 36.7636 3.27974 34.2907C1.09325 31.7628 0 28.7129 0 25.141C0 14.4252 5.93087 6.04483 17.7926 0L20.9904 5.93492Z' fill='%233D3D3D'/%3e%3c/svg%3e ");
+  display: block;
+  width: 52px;
+  height: 39px;
+  background-size: contain;
+  position: absolute;
+  top: -25px;
+  left: 36px;
+}
+.cust-reviews__item:not(:last-of-type) {
+  margin-bottom: 57px;
+}
+.cust-reviews__author {
+  display: block;
+  color: #1e1e1e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 150px;
+}
+.cust-reviews__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.cust-reviews__specialist {
+  display: block;
+  margin: 0;
+  color: rgba(30, 30, 30, 0.7);
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.cust-reviews__specialist span {
+  color: #1e1e1e;
+  font-weight: 500;
+  display: block;
+}
+.cust-reviews__text {
+  margin: 0;
+  color: #3d3d3d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 937px;
+}
+
+@media (max-width: 991px) {
+  .cust-licenses {
+    padding-left: 0;
+  }
+  .cust-licenses .title {
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  .cust-licenses__card:not(:last-of-type) {
+    margin-bottom: 31px;
+  }
+  .cust-licenses {
+    padding-bottom: 66px;
+  }
+  .cust-title {
+    margin-bottom: 34px !important;
+  }
+  .cust-reviews {
+    padding: 50px 0;
+  }
+  .cust-reviews__item:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .cust-licenses__content {
+    padding: 25px 48px;
+  }
+}
 @media (max-width: 650px) {
+  .cust-reviews__author {
+    font-size: 18px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+  }
+  .cust-reviews__head {
+    display: block;
+    border-bottom: none;
+    margin: 0;
+  }
+  .cust-reviews__item:before {
+    scale: 0.65;
+  }
   .faq-filter-mob {
     display: block;
+  }
+  .cust-reviews__item {
+    padding: 30px 21px;
+  }
+  .cust-reviews__specialist {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
   }
   .faq-filter {
     display: none;
@@ -206,6 +368,13 @@
   }
   .custom-select {
     margin-top: 0;
+  }
+  .cust-reviews__text {
+    font-size: 13px;
+  }
+  .cust-reviews__item:before {
+    top: -23px;
+    left: 11px;
   }
 }
 @media (max-width: 425px) {
