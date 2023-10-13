@@ -541,8 +541,8 @@ head-nav__item:last-of-type .head-nav__link {
     padding-top: 75px;
   }
 
-  .sticker {
-    display: none;
+  .container--mod .sticker {
+    display: none !important;
   }
 }
 
