@@ -976,7 +976,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 .breadcrumb-item:not(:last-child)::after {
-  content: "/";
+  content: "./index.html";
   display: inline-block;
   font-size: 16px;
   line-height: 1.2;
@@ -2251,7 +2251,7 @@ h1, h2, h3, h4, h5, h6,
 .form-control.error{
   border-bottom: 1px solid var(--theme-danger-border);
   color: var(--theme-danger-border);
-  
+
 }
 .form-control.error::placeholder{
   transition: color 0.3s;
